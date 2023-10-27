@@ -1,0 +1,801 @@
+body {
+    background: linear-gradient(rgba(43, 12, 92, 0.8), rgba(140, 237, 242, 0.8), rgba(43, 12, 92, 0.8));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #eef3db;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #84b7be;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: #c2bf1d;
+}
+
+img {
+    width: 100%;  
+}
+
+.imgcv {
+    width: 80%;
+}
+
+.imgcv:hover {
+    width: 85%;
+    transform: scale(1.1);
+}
+
+p {
+    color: #91eafc;
+}
+.text-brand {
+    color: #d8d784;
+    font-weight: bold;
+}
+.bg-base {
+    background-color: #258693;
+    border-top-right-radius: 30px ;
+}
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+.shadow-effect {
+    transition: all 0.5s;
+}
+.shadow-effect:hover {
+    box-shadow: 0.8em 0 0.8em rgb(133, 201, 208),-0.8em 0 0.4em rgb(157, 110, 180);
+}
+
+/* navbar */
+
+.cv2 {
+    font-size: 250%;
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: #038fa1;
+}
+.navbar-brand {
+    width: 80%;
+}
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f1e9e9;
+}
+.navbar .nav-link:hover {
+    color: #6f6e33;
+}
+.navbar .nav-link.active {
+    color: #e2de0e;
+}
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: 240px;
+        background: linear-gradient(rgba(10, 212, 222, 0.8), rgba(43, 12, 92, 0.8));
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 2px solid #dbdbcf;
+        box-shadow: 0.5em 0 0.5em rgb(133, 201, 208),-0.5em 0 0.4em rgb(157, 110, 180);
+    }
+
+    /* content*/
+    #content-wrapper {
+        padding-left: 240px;
+    }
+}
+
+/* CV flottant*/
+
+.floating-btn2 {
+margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #8408b1, #fff, #35b5e7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+  }  
+  .floating-btn2:hover {
+    opacity: 1;
+    box-shadow: 0.5em 0 0.5em rgb(133, 201, 208),-0.5em 0 0.4em rgb(157, 110, 180);
+  }
+  button a {
+    text-decoration: none;
+    font-weight:bold ;
+    font-size: 200%;
+    color: #0b2328;
+  }
+  button a:hover {
+    text-decoration: none;
+    font-weight:bold ;
+    font-size: 200%;
+    color: #07620a;
+  }
+
+  @media (max-width: 768px) {
+    .floating-btn {
+        position: fixed;
+        z-index: 10;
+        top: 100px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(45deg, #8408b1, #fff, #35b5e7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+      }  
+      .floating-btn:hover {
+        opacity: 1;
+        box-shadow: 0.5em 0 0.5em rgb(133, 201, 208),-0.5em 0 0.4em rgb(157, 110, 180);
+      }
+      button a {
+        text-decoration: none;
+        font-weight:bold ;
+        font-size: 200%;
+        color: #0b2328;
+      }
+      button a:hover {
+        text-decoration: none;
+        font-weight:bold ;
+        font-size: 200%;
+        color: #07620a;
+      }
+
+}
+
+/*souris*/
+
+  .cursor {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+    pointer-events: none;
+  }
+  
+  .cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    background: rgb(9, 199, 247);
+    border-radius: 50%;
+  }
+  
+  .expand {
+    animation: Anim2 .5s;
+    background: rgb(18, 174, 195);
+    border: 1px solid rgb(240, 244, 245);
+  }
+  @keyframes Anim1 {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.7) rotate(190deg);
+    }
+  } 
+  @keyframes Anim2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+        opacity:0;
+    }
+  }
+
+/*defilement texte*/
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+  }  
+  .para {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+  } 
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+/* bouton */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+.btn-brand {
+    background: #d8d784;
+    border-color: #d8d784;
+    color: #1abacf;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #91eafc;
+    color: #c6d2d4;
+    border-color: #91eafc;
+}
+.link-custom {
+    font-weight: 400;
+    position: relative;
+    color: #ecfc91;
+}
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #d8d784;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* card */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+    margin: 10% auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+/* experiences*/
+.projet {
+    width: 60%;
+    border-radius: 5%; 
+    border: 2px solid rgb(19, 150, 7);   
+}
+
+/* contact */
+#contact .form-control {
+    background-color: #038fa1;
+    border-color: #038fa1;
+    color: #84b7be;
+}
+#contact .form-control:focus {
+    border-color: #d8d784;
+    box-shadow: none;
+}
+#contact .form-control::placeholder {
+    color: #dfebed;
+}
+#contact input.form-control {
+    height: 44px;
+}
+
+/* icones reseaux sociaux */
+.icone a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #038fa1;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+/* competences*/
+.compTitre {
+    color: #d3f7cf;
+    font-weight: bold;
+}
+.CompBox {
+    font-size: 30px;
+    font-family: Lato-Regular, sans-serif;
+    width: 95%;
+    margin: auto;
+    height: auto;
+    opacity: 0.7;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
+}
+.CompBox img {
+    width: 30%;
+    height: 30%;
+    margin: auto 35%;
+    padding: 10px;
+}
+.CompBar {
+    width: 90%;
+    height: 40px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+
+#Comp-HTML {
+    width: 90%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 40px;
+    position: absolute;
+    background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-webkit-keyframes Animate-HTML {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-moz-keyframes Animate-HTML {
+    from {
+    width: 300px;
+}
+to {
+    width: 100%}
+}
+@-o-keyframes Animate-HTML {
+    from {
+    width: 300px;
+}
+to {
+    width: 100%}
+
+}
+
+#Comp-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 70%;
+    height: 40px;
+    position: absolute;
+    background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+@-webkit-keyframes Animate-CSS {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+@-moz-keyframes Animate-CSS {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+@-o-keyframes Animate-CSS {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+
+#Comp-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 40%;
+    height: 40px;
+    position: absolute;
+    background-color: #99856d;
+}
+@keyframes Animate-jQuery {
+    from {
+    width: 300px;
+}
+to {
+    width: 40%}
+}
+@-webkit-keyframes Animate-jQuery {
+    from {
+    width: 300px;
+}
+to {
+    width: 40%}
+}
+@-moz-keyframes Animate-jQuery {
+    from {
+    width: 300px;
+}
+to {
+    width: 40%}
+}
+@-o-keyframes Animate-jQuery {
+    from {
+    width: 300px;
+}
+to {
+    width: 40%}
+}
+
+#Comp-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 60%;
+    height: 40px;
+    position: absolute;
+    background-color: #c44e45;
+}
+@keyframes Animate-JS {
+    from {
+    width: 300px;
+}
+to {
+    width: 60%}
+}
+@-webkit-keyframes Animate-JS {
+    from {
+    width: 300px;
+}
+to {
+    width: 60%}
+}
+@-moz-keyframes Animate-JS {
+    from {
+    width: 300px;
+}
+to {
+    width: 60%}
+}
+@-o-keyframes Animate-JS {
+    from {
+    width: 300px;
+}
+to {
+    width: 60%}
+}
+
+#Comp-Photoshop {
+    animation: Animate-XML 4s;
+    -webkit-animation: Animate-XML 4s;
+    -moz-animation: Animate-XML 4s;
+    -o-animation: Animate-XML 4s;
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    background-color: #5aa669;
+}
+@keyframes Animate-XML {
+    from {
+    width: 300px;
+}
+to {
+    width: 80%}
+}
+@-webkit-keyframes Animate-XML {
+    from {
+    width: 300px;
+}
+to {
+    width: 80%}
+}
+@-moz-keyframes Animate-XML {
+    from {
+    width: 300px;
+}
+to {
+    width: 80%}
+}
+@-o-keyframes Animate-XML {
+    from {
+    width: 300px;
+}
+to {
+    width: 80%}
+}
+
+#Comp-Office {
+    animation: Animate-C 4s;
+    -webkit-animation: Animate-C 4s;
+    -moz-animation: Animate-C 4s;
+    -o-animation: Animate-C 4s;
+    width: 70%;
+    height: 40px;
+    position: absolute;
+    background-color: #970cc1;
+}
+@keyframes Animate-C {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+@-webkit-keyframes Animate-C {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+@-moz-keyframes Animate-C {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+@-o-keyframes Animate-C {
+    from {
+    width: 300px;
+}
+to {
+    width: 70%}
+}
+
+#Comp-Text1 {
+    animation: Animate-JAVA 4s;
+    -webkit-animation: Animate-JAVA 4s;
+    -moz-animation: Animate-JAVA 4s;
+    -o-animation: Animate-JAVA 4s;
+    width: 95%;
+    height: 40px;
+    position: absolute;
+    background-color: #8e930c;
+}
+@keyframes Animate-JAVA {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+@-webkit-keyframes Animate-JAVA {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+@-moz-keyframes Animate-JAVA {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+@-o-keyframes Animate-JAVA {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+
+#Comp-Text2 {
+    animation: Animate-PHP 4s;
+    -webkit-animation: Animate-PHP 4s;
+    -moz-animation: Animate-PHP 4s;
+    -o-animation: Animate-PHP 4s;
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    background-color: #5A69A6;
+}
+@keyframes Animate-PHP {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-webkit-keyframes Animate-PHP {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-moz-keyframes Animate-PHP {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-o-keyframes Animate-PHP {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+
+#Comp-Text3 {
+    animation: Animate-SQL 4s;
+    -webkit-animation: Animate-SQL 4s;
+    -moz-animation: Animate-SQL 4s;
+    -o-animation: Animate-SQL 4s;
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    background-color: #23b1db;
+}
+@keyframes Animate-SQL {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-webkit-keyframes Animate-SQL {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-moz-keyframes Animate-SQL {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+@-o-keyframes Animate-SQL {
+    from {
+    width: 300px;
+}
+to {
+    width: 90%}
+}
+
+#Comp-Text4 {
+    animation: Animate-VBNET 4s;
+    -webkit-animation: Animate-VBNET 4s;
+    -moz-animation: Animate-VBNET 4s;
+    -o-animation: Animate-VBNET 4s;
+    width: 95%;
+    height: 40px;
+    position: absolute;
+    background-color: #f8a51e;
+}
+@keyframes Animate-VBNET {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+@-webkit-keyframes Animate-VBNET {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+@-moz-keyframes Animate-VBNET {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+@-o-keyframes Animate-VBNET {
+    from {
+    width: 300px;
+}
+to {
+    width: 95%}
+}
+
+.Comp-Area {
+    z-index: 1;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 50%;
+}
+
+.Pourcentage {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 10px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .Pourcentage {
+        z-index: 3;
+        position: relative;
+        padding-right: 15px;
+
+
+        text-shadow: none;
+        color: #fff;
+        font-family: Lato-Regular, sans-serif;
+        font-size: 12px;
+    }
+}
+

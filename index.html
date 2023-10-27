@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio_Tehaa</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <!-- JQUERY LIBRARY -->
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+
+    <!-- FONTS AND ICONS -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C800%2C500" rel="stylesheet" property="stylesheet"
+        type="text/css" media="all" />
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <div class="cursor"></div>
+    <button class="floating-btn cv d-lg-none"><a href="assets/cvTehaa.pdf">CV</a></button>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="assets/cvTehaa.pdf">
+                <span class="h3 fw-bold d-block d-lg-none">Eléonore Tehaameamea</span>
+                <button class="floating-btn2 d-none d-lg-block cv2">CV</button>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formation">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competence">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projet">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //navbar -->
+
+    <!-- content -->
+    <div id="content-wrapper">
+
+        <!-- accueil -->
+        <section id="accueil" class="full-height px-lg-5">
+            <p class="para">Bienvenue sur mon porfolio</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">Je suis <span class="text-brand">Eléonore,
+                                Web développeur</span><br> en devenir</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">En effet, c'est un métier
+                            passionnant et créatif. Les avantages sont nombreux : un métier en perpétuel évolution, un
+                            marché grandissant, un statut privilégié (CDI ou freelance)<br>En revanche, c’est un métier
+                            qui demande beaucoup d’effort et de discipline pour avoir un bon niveau. <br> Etre
+                            développeur ce n’est pas uniquement créer quelques pages en HTML et CSS. Il faut être
+                            logique, vouloir apprendre, être curieux, … <br>Il faudra donc s’accrocher pour le devenir
+                            et surtout en avoir vraiment l’envie. Mais une fois certifié, on pourra être fier du
+                            parcours réalisé et profiter de ce métier qui n’a pas de limite !</p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#projet" class="btn btn-brand btn-info me-3">Explore Mes projets</a>
+                            <a href="#" class="link-custom">Tél: (+596) 696 00 21 23</a>
+                        </div>
+                    </div><!-- //col -->
+                </div><!-- //row -->
+            </div>
+
+        </section>
+        <!-- //accueil -->
+
+        <!-- a propos -->
+        <section id="apropos" class="full-height px-lg-5">
+            <div class="container">
+                <p class="para">A propos de moi</p>
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <h5 class="mt-4 mb-2">A propos de moi</h5>
+                            <p>Polyvalente, rigoureuse et habituée aux longues journées de travail.</p>
+                            <p>Organisée et autonome, je m'implique dans tous les projets que l'on me confie</p>
+                            <p>Motivée, passionnée par tout ce qui touche les nouvelles technologies</p>
+                            <p>Curieuse, créative et une bonne capacité d'adaptation</p>
+                            <p>Titulaire du Permis B et du Permis Mer Cotier</p>
+                            <a href="#" class="link-custom">retour</a>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <h5 class="mt-4 mb-2">Ce que j'aime</h5>
+                            <p>Coutume Martiniquaise et polynésienne</p>
+                            <p>Natation, Aviron, Randonnée</p>
+                            <p>Pêche professionnelle</p>
+                            <p>Recherche et partage de bons plans</p>
+                            <p>Montage photo</p>
+                            <a href="#" class="link-custom">retour</a>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <h5 class="mt-4 mb-2">Pour me joindre</h5>
+                            <p>tehaa972 @ gmail.com</p>
+                            <p>(+596) 696 00 21 23</p>
+                            <a href="#" class="link-custom">retour</a>
+                        </div>
+                    </div><!-- //col -->
+
+                </div><!-- //row -->
+
+            </div>
+        </section>
+        <!-- //a propos -->
+
+        <!-- experiences -->
+        <section id="experience" class="full-height px-lg-5">
+            <div class="container">
+                <p class="para">Expériences professionnelles</p>
+                <div class="row gy-4">
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-1.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Direction de la mer de Martinique</h4>
+                                <p>Controle et statistiques de fiches de pêche</p>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-2.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Mairie de Case pilote</h4>
+                                <p>Mise en place d'une plateforme de connexion wifi pour les usagers</p>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-3.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>MAAD Informatique</h4>
+                                <p>Maintenance et réparation d'outils informatiques</p>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-4.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Association MANIBA</h4>
+                                <p>Aide aux devoirs et à l'utilisation des outils bureautiques et informatiques</p>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+                </div><!-- //row -->
+
+            </div>
+        </section>
+        <!-- //experiences -->
+
+        <!-- formations -->
+        <section id="formation" class="full-height px-lg-5">
+            <div class="container">
+                <p class="para">Formations professionnelles</p>
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>En cours</h4>
+                                    <p class="text-brand mb-2">Formation de Web developpeur et Web mobile</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>2022</h4>
+                                    <p class="text-brand mb-2">Initiation au FEAMP</p>
+                                    <p class="mb-0">Montage et étude de dossier de demande de financement des fonds
+                                        européens</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>2018-2021</h4>
+                                    <p class="text-brand mb-2">Création d'espaces Web</p>
+                                    <p class="mb-0">Création de compte à destination des marins pêcheurs</p>
+                                    <p class="mb-0">inscription à l'INSEE</p>
+                                    <p class="mb-0">Création de compte URSSAF</p>
+                                    <p class="mb-0">Création de compte ENIM</p>
+                                    <p class="mb-0">Création de compte AMELI</p>
+                                    <p class="mb-0">Création de compte Portail Marin et Portail Armateur</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- //col -->
+
+                    <div class="col-lg-6">
+
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>2015-2016</h4>
+                                    <p class="text-brand mb-2">Titre professionnel niveau BAC+2 T.S.R.I.T</p>
+                                    <p class="mb-0">Technicien Supérieur en Réseaux Informatiques et Télécommunications
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>2014</h4>
+                                    <p class="text-brand mb-2">Formation Mention complémentaire en Webmaster</p>
+                                    <p class="mb-0">Formation de courte durée de 3 mois afin d'approfondir des
+                                        connaissances de WORDPRESS</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>2013</h4>
+                                    <p class="text-brand mb-2">P.C.I.E</p>
+                                    <p class="mb-0">Passeport de Compétences Informatiques Européen<br>
+                                        Acquerir un niveau de maîtrise raisonnable de l'outil numérique dans le cadre
+                                        professionnel</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- //col -->
+
+                </div><!-- //row -->
+
+            </div>
+        </section>
+        <!-- //formations -->
+
+        <!-- compétences -->
+        <section id="competence" class="full-height px-lg-5">
+            <div class="container">
+                <p class="para">Compétences professionnelles</p>
+                <div class="row gy-4">
+                    <div class="col-md-6" data-aos="fade-up">
+                        <div class="shadow-effect bg-base p-4 rounded-4">
+                            <center>
+                                <div class="CompBox">
+                                    <center>
+                                        <p class="compTitre">Compétences techniques</p>
+                                    </center>
+                                    <img src="./assets/images/comp.png" alt="comp" />
+                                    <div class="CompBar">
+                                        <div id="Comp-HTML">
+                                            <span class="Comp-Area">HTML</span>
+                                            <span class="Pourcentage">90%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-CSS">
+                                            <span class="Comp-Area">CSS</span>
+                                            <span class="Pourcentage">70%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-jQuery">
+                                            <span class="Comp-Area">jQuery</span>
+                                            <span class="Pourcentage">40%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-JS">
+                                            <span class="Comp-Area">Javascript</span>
+                                            <span class="Pourcentage">60%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-Photoshop">
+                                            <span class="Comp-Area">Photoshop </span>
+                                            <span class="Pourcentage">80%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-Office">
+                                            <span class="Comp-Area">Suite office</span>
+                                            <span class="Pourcentage">70%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                            <a href="#" class="link-custom">retour</a>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <center>
+                                <div class="CompBox">
+                                    <center>
+                                        <p class="compTitre">Compétences pratiques</p>
+                                    </center>
+                                    <img src="./assets/images/comp.png" alt="comp" />
+                                    <div class="CompBar">
+                                        <div id="Comp-Text1">
+                                            <span class="Comp-Area">Rigueur, organisation, fiabilité </span>
+                                            <span class="Pourcentage">95%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-Text2">
+                                            <span class="Comp-Area">Maitrise d'espaces Web de services publics </span>
+                                            <span class="Pourcentage">90%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-Text3">
+                                            <span class="Comp-Area">Echanger, traiter et transmettre des informations
+                                            </span>
+                                            <span class="Pourcentage">90%</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="CompBar">
+                                        <div id="Comp-Text4">
+                                            <span class="Comp-Area">Aisance relationnelle et discrétion</span>
+                                            <span class="Pourcentage">95%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </center>
+                            <a href="#" class="link-custom">retour</a>
+                        </div>
+                    </div><!-- //col -->
+
+                </div><!-- //row -->
+            </div>
+        </section>
+        <!-- //Compétences -->
+
+        <!-- Projets -->
+        <section id="projet" class="full-height px-lg-5">
+            <div class="container">
+                <p class="para">Projets professionnels</p>
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-8.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h5 class="mb-4">Elaborer un mini-quiz de 5 questions avec affichage du score final</h5>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-6.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h5 class="mb-4">Simulateur de calcul du coût d'inscription d'un enfant en creche</h5>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4 projet" src="./assets/images/project-5.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h5 class="mb-4">Calcul de plage Horaire (utile dans la planificaation d'activités) </h5>
+                                <a href="#" class="link-custom">retour</a>
+                            </div>
+                        </div>
+                    </div><!-- //col -->
+
+                </div><!-- //row -->
+
+            </div>
+        </section>
+        <!-- //projets -->
+
+        <!-- contact -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+                <p class="para">Merci de votre visite . . .</p>
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up">
+                        <h1>Intéressé(e) pour travailler ensemble ? Contactez-moi
+                        </h1>
+                    </div><!-- //col -->
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Votre nom">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Votre email">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control" placeholder="Votre message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-info btn-brand">Contactez-moi</button>
+                            </div>
+                        </form>
+                    </div><!-- //col -->
+                </div><!-- //row -->
+
+
+            </div>
+        </section>
+        <!-- //contact -->
+
+
+        <!-- footer -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0 fw-bold">Porfolio d' <a href="#" class="fw-bold">Eléonore Tehaameamea</a></p>
+                    </div><!-- //col -->
+                    <div class="col-auto">
+                        <div class="icone">
+                            <a href="#"><i class="lab la-twitter"></i></a>
+                            <a href="#"><i class="lab la-instagram"></i></a>
+                            <a href="#"><i class="lab la-github"></i></a>
+                        </div><!-- //col -->
+                    </div>
+                </div><!-- //row -->
+            </div>
+        </footer>
+        <!-- //footer -->
+
+    </div>
+    <!-- //content -->
+
+    <script>
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
